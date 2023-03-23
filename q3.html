@@ -167,10 +167,13 @@ pre code {
 <center>
 <div id="sta-202-project-1-group-3" class="section level1">
 <h1>STA 202 Project 1 Group 3<br></h1>
-<p>Kshitij Shekhar-AU2020165<br> Laksh Gupta-AU2020152<br> Vinayak C Manoj-AU2020015<br></p>
+Kshitij Shekhar-AU2020165<br> Laksh Gupta-AU2020152<br> Vinayak C Manoj-AU2020015<br>
+</center>
+<p><br></p>
 <div id="question-1" class="section level2">
 <h2>Question 1</h2>
-<p>(A)<strong>Suppose <span class="math inline">\(f(x)=\frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}\)</span>, where X can take values from 1 to n Take, n = 20 and p = 0.5. Write some R code to plot the probability mass function and and check if the function is a probability probability function or not?</strong></p>
+(A)<strong>Suppose <span class="math inline">\(f(x)=\frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}\)</span>, where X can take values from 1 to n Take, n = 20 and p = 0.5. Write some R code to plot the probability mass function and and check if the function is a probability probability function or not?</strong>
+</center>
 <pre class="r"><code>x = 20
 n = 20
 p = 0.5
@@ -218,17 +221,17 @@ for (i in 0:x)
 
 y = sample(fx, 20, replace = TRUE) # sampling data from f(x) with allowed replacement
 print(y)</code></pre>
-<pre><code>##  [1] 1.761971e-01 3.696442e-02 1.907349e-05 1.201344e-01 4.620552e-03
-##  [6] 1.601791e-01 1.478577e-02 7.392883e-02 3.696442e-02 1.907349e-05
-## [11] 3.696442e-02 3.696442e-02 1.201344e-01 1.201344e-01 1.601791e-01
-## [16] 1.601791e-01 4.620552e-03 1.201344e-01 1.811981e-04 1.087189e-03</code></pre>
+<pre><code>##  [1] 1.907349e-05 1.811981e-04 1.201344e-01 1.601791e-01 1.201344e-01
+##  [6] 1.087189e-03 1.087189e-03 1.811981e-04 1.478577e-02 1.201344e-01
+## [11] 1.087189e-03 1.201344e-01 7.392883e-02 1.201344e-01 9.536743e-07
+## [16] 1.087189e-03 1.907349e-05 1.478577e-02 4.620552e-03 9.536743e-07</code></pre>
 <pre class="r"><code>sample_mean = mean(y) #sample mean
 sample_variance = var(y) #sample variance
 
 print(sample_mean)</code></pre>
-<pre><code>## [1] 0.06921959</code></pre>
+<pre><code>## [1] 0.04368615</code></pre>
 <pre class="r"><code>print(sample_variance)</code></pre>
-<pre><code>## [1] 0.004269104</code></pre>
+<pre><code>## [1] 0.00345147</code></pre>
 </div>
 <div id="question-2" class="section level2">
 <h2>Question 2</h2>
@@ -285,7 +288,8 @@ Setting the derivative to zero to maximize <span class="math inline">\(l(\theta)
 <p>According to the Hardy-Weinberg Equilibrium, if the blood types are in equilibrium, alleles M, MN and N occur in a population with probabilities <span class="math inline">\((1-\theta)^2, 2\theta(1-\theta),\)</span> and <span class="math inline">\(\theta^2\)</span> respectively. Since we do not know the actual value of <span class="math inline">\(\theta\)</span>, we can use <span class="math inline">\(\hat{\theta}\)</span> according to the bootstrap principle.<br> <span class="math inline">\(\therefore\)</span> (M,MN,NN) occur with probability <span class="math inline">\(.331,.489,.180\)</span></p>
 <p>(B)<strong>How do we assess the preciseness of the estimate <span class="math inline">\(\hat{\theta}\)</span>? Make comments.</strong></p>
 <p>We can assess the preciseness of <span class="math inline">\(\hat{\theta}\)</span> by using the bootstrap method to estimate the sampling distribution with a histogram, and by extension its standard error</p>
-<p>(C)<strong>Estimate the sampling distribution of θ (ie, draw the histogram) and report the standard error.</strong></p>
+(C)<strong>Estimate the sampling distribution of θ (ie, draw the histogram) and report the standard error.</strong>
+</center>
 <pre class="r"><code>observed_freqs=c(342,500,187)
 # Calculate the observed value of theta
 f_M &lt;- observed_freqs[1]
@@ -396,8 +400,10 @@ cat(&quot;Standard Error:&quot;, SE, &quot;\n&quot;)</code></pre>
 </div>
 <div id="contributions-in-the-project" class="section level2">
 <h2>Contributions in the project</h2>
-<p>Question 1 : Laksh Gupta Question 2 : Vinayak Manoj Question 3 : Kshitij Shekhar</p>
-<p>Report : Kshitij Shekhar</p>
+<p><strong>Question 1</strong> : Laksh Gupta <br></p>
+<p><strong>Question 2</strong> : Vinayak Manoj<br></p>
+<p><strong>Question 3</strong> : Kshitij Shekhar</p>
+<p><strong>Report</strong> : Kshitij Shekhar</p>
 </div>
 </div>
 

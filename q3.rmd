@@ -1,22 +1,18 @@
----
-title: "STA 202 Project-1"
-author: Kshitij Shekhar, Laksh Gupta, Vinayak C Manoj
-date: March 21 2023
-output:
-  md_document:
-    variant: markdown_github
----
+
 
 <center>
 # STA 202 Project 1 Group 3<br>
 Kshitij Shekhar-AU2020165<br>
 Laksh Gupta-AU2020152<br>
 Vinayak C Manoj-AU2020015<br>
+</center>
+<br>
 
 ## Question 1
 (A)**Suppose $f(x)=\frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}$, where X can take values from 1 to n
 Take, n = 20 and p = 0.5. Write some R code to plot the probability mass function and and
 check if the function is a probability probability function or not?**
+</center>
 ```{r}
 x = 20
 n = 20
@@ -148,7 +144,7 @@ We can assess the preciseness of $\hat{\theta}$ by using the bootstrap method to
 
 (C)**Estimate the sampling distribution of θ (ie, draw the histogram) and report the standard
 error.** 
-
+</center>
 ```{r}
 
 observed_freqs=c(342,500,187)
@@ -270,8 +266,10 @@ cat("90% Confidence Interval:", CI, "\n")
 
 
 ## Contributions in the project
-Question 1 : Laksh Gupta
-Question 2 : Vinayak Manoj
-Question 3 : Kshitij Shekhar
+**Question 1** : Laksh Gupta <br>
 
-Report : Kshitij Shekhar
+**Question 2** : Vinayak Manoj<br>
+
+**Question 3** : Kshitij Shekhar
+
+**Report** : Kshitij Shekhar
